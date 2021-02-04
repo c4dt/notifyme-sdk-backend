@@ -16,7 +16,7 @@ RUSTY_SWAGGER = rusty-swagger
 all: clean all1
 all1: clean updateproject updatedoc swagger la la2 la3
 no: clean updateproject updatedoc swagger la la2
-docker: updateproject docker
+docker: updateproject docker-build
 doc: updatedoc swagger la la2 la3
 test: clean run-test
 run-test:
